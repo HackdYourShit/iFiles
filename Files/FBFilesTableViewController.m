@@ -290,6 +290,8 @@
 		cell.imageView.image = [UIImage imageNamed:@"Folder"];
 	else if ([[newPath pathExtension] isEqualToString:@"png"])
 		cell.imageView.image = [UIImage imageNamed:@"Picture"];
+    else if ([[newPath pathExtension] isEqualToString:@"sh"])
+        cell.imageView.image = [UIImage imageNamed:@"Bash"];
 	else
 		cell.imageView.image = [UIImage imageNamed:@"Document"];
 	
